@@ -131,7 +131,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.251);
   font-family: "Rosario", sans-serif;
   font-style: italic;
-  background-color: #FAF2F2;
+  background-color: #faf2f2;
 }
 .container .about .about__info .info__btn a {
   font-weight: 500;
@@ -150,6 +150,37 @@
   width: 475px;
   height: 465px;
   background: url(./img/Rectangle\ 7.jpg);
+}
+.container .collection__menu {
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-around;
+}
+.container .collection__menu .menu__category .pic__block .bg1 {
+  background-color: #c1ada5;
+  height: 470px;
+  width: 587px;
+}
+.container .collection__menu .menu__category .pic__block .img1 {
+  height: 470px;
+  width: 587px;
+  background: url(./img/Rectangle_9.jpg) no-repeat;
+}
+.container .collection__menu .menu__category .pic__block .bg2 {
+  background-color: #e7e8e3;
+  height: 470px;
+  width: 587px;
+}
+.container .collection__menu .menu__category .pic__block .img2 {
+  height: 470px;
+  width: 587px;
+  background: url(./img/Rectangle_10.jpg) no-repeat;
+}
+.container .collection__menu .menu__category .category__name {
+  font-family: "Rosario", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  margin-top: 50px;
 }
 .container .pic__block {
   display: grid;
