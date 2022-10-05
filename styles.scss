@@ -1,43 +1,45 @@
 $width: 1440px;
 $header-height: 90px;
 
+.header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-family: "Actor", sans-serif;
+  box-shadow: 0px 5px 2px rgb(225, 214, 214);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #faf2f2;
+  z-index: 10;
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .nav__menu {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    .menu__item {
+      margin-left: 45px;
+    }
+  }
+  .header__links {
+    display: flex;
+    list-style: none;
+    .links__item {
+      margin-right: 45px;
+    }
+  }
+}
 .container {
   background-color: #faf2f2;
   width: $width;
   margin: 0 auto;
-  .header {
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 24px;
-    font-family: "Actor", sans-serif;
-    box-shadow: 0px 5px 2px rgb(225, 214, 214);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #faf2f2;
-    a {
-      color: #000;
-      text-decoration: none;
-    }
 
-    .nav__menu {
-      display: flex;
-      list-style: none;
-      padding: 0px;
-      .menu__item {
-        margin-left: 45px;
-      }
-    }
-    .header__links {
-      display: flex;
-      list-style: none;
-      .links__item {
-        margin-right: 45px;
-      }
-    }
-  }
   .home {
     .home__bg {
       display: flex;
@@ -74,11 +76,10 @@ $header-height: 90px;
         }
       }
       .text__description {
-        font-family: 'Alex Brush', cursive;
-        color: #FFF;
+        font-family: "Alex Brush", cursive;
+        color: #fff;
         font-size: 48px;
       }
-
     }
     .home__shop {
       position: absolute;
@@ -89,14 +90,88 @@ $header-height: 90px;
       background-color: #00000008;
       border: 0.3px solid rgba(0, 0, 0, 0.172);
       box-shadow: 2px 4px 1px -1px rgba(0, 0, 0, 0.378);
-a {text-decoration: none;}
+      a {
+        text-decoration: none;
+      }
 
       .shop__text {
         font-size: 36px;
-        color: #FFF;
-margin-right: 15px;
-
+        color: #fff;
+        margin-right: 15px;
       }
+    }
+  }
+  .content {
+    padding: 7% 3%;
+    height: 900px;
+    .section__heading {
+      font-family: "Gentium Book Basic", serif;
+      font-size: 48px;
+      font-weight: 400;
+      margin: 40px 0;
+    }
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+    
+    .about__info {
+      width: 55%;
+      // .info__features {
+      //   width: 700px;
+      // }
+      .item__heading {
+        font-family: "Gentium Book Basic", serif;
+        font-size: 36px;
+        font-weight: 400;
+        margin: 30px 0 20px;
+      }
+      .item__text {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 26px;
+      }
+      .info__btn {
+        margin-top: 50px;
+        width: 255px;
+        height: 67px;
+        font-size: 36px;
+        border: 1px solid #000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.251);
+        font-family: 'Rosario', sans-serif;
+        font-style: italic;
+        background-color: #FAF2F2;
+a {        font-weight: 500;
+  text-decoration: none;
+color: #000;}
+      }
+    }
+    .about__pic {
+      padding: 5%;
+      .pic__block {
+        .block__bg {
+          width: 475px;
+          height: 465px;
+          background-color: #bdb398;
+        }
+        .block__image {
+          width: 475px;
+          height: 465px;
+          background: url(./img/Rectangle\ 7.jpg);
+        }
+      }
+    }
+  }
+  .pic__block {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-template-rows: 20px 1fr;
+
+    .block__bg {
+      grid-column-start: 2;
+    }
+    .block__image {
+      grid-row-start: 2;
     }
   }
 }

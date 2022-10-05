@@ -12,23 +12,23 @@
     />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <nav class="header__nav">
-          <ul class="nav__menu">
-            <li class="menu__item">
-              <a href="#">Home</a>
-            </li>
-            <li class="menu__item"><a href="#">About</a></li>
-            <li class="menu__item"><a href="#">Gift Coupons</a></li>
-            <li class="menu__item"><a href="#">Stores</a></li>
-          </ul>
-        </nav>
-        <ul class="header__links">
-          <li class="links__item"><a href="#">Connect</a></li>
-          <li class="links__item"><a href="#">Sign in</a></li>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="nav__menu">
+          <li class="menu__item">
+            <a href="#">Home</a>
+          </li>
+          <li class="menu__item"><a href="#">About</a></li>
+          <li class="menu__item"><a href="#">Gift Coupons</a></li>
+          <li class="menu__item"><a href="#">Stores</a></li>
         </ul>
-      </header>
+      </nav>
+      <ul class="header__links">
+        <li class="links__item"><a href="#">Connect</a></li>
+        <li class="links__item"><a href="#">Sign in</a></li>
+      </ul>
+    </header>
+    <div class="container">
       <section class="home">
         <div class="home__bg">
           <img
@@ -54,8 +54,60 @@
           <a href="#">
             <span class="shop__text">Shop Now</span>
             <img class="shop__bag" src="./img/bag.svg" alt="bag" />
-            </a>
+          </a>
         </button>
+      </section>
+      <section class="about content">
+        <div class="about__info">
+          <h2 class="info__heading section__heading">
+            Ethnically Handcrafted Jewellery
+          </h2>
+          <div class="info__features">
+            <div class="features__item">
+              <h3 class="item__heading">Fair Price</h3>
+              <div class="item__text">
+                Say goodbye to traditional 10x markups. We design fine jewelry
+                that you can wear every single day.
+              </div>
+            </div>
+            <div class="features__item">
+              <h3 class="item__heading">High Quality</h3>
+              <div class="item__text">
+                We work with expert jewelers who use high-quality and enduring
+                materials, from precious metals—such as recycled and responsibly
+                mined gold—to ethically sourced diamonds and AAA-grade
+                gemstones.
+              </div>
+            </div>
+          </div>
+          <button class="info__btn"><a href="#">Read More</a></button>
+        </div>
+        <div class="about__pic">
+          <div class="pic__block">
+            <div class="block__bg"></div>
+            <div class="block__image"></div>
+          </div>
+          <a href="#" class="pic__more">See <span>More</span></a>
+        </div>
+      </section>
+      <section class="collection">
+        <h2 class="collection__heading section__heading">
+          Dive into our everyday wear collection
+        </h2>
+        <div class="collection__menu">
+          <div class="menu__category">
+            <div class="category__pic pic__block"></div>
+            <div class="block__bg"></div>
+            <div class="block__image"></div>
+            <div class="category__name">Earrings</div>
+          </div>
+          <div class="menu__category">
+            <div class="category__pic pic__block"></div>
+            <div class="block__bg"></div>
+            <div class="block__image"></div>
+            <div class="category__name">Necklaces</div>
+          </div>
+        </div>
       </section>
     </div>
   </body>
