@@ -1,0 +1,102 @@
+$width: 1440px;
+$header-height: 90px;
+
+.container {
+  background-color: #faf2f2;
+  width: $width;
+  margin: 0 auto;
+  .header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-family: "Actor", sans-serif;
+    box-shadow: 0px 5px 2px rgb(225, 214, 214);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #faf2f2;
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .nav__menu {
+      display: flex;
+      list-style: none;
+      padding: 0px;
+      .menu__item {
+        margin-left: 45px;
+      }
+    }
+    .header__links {
+      display: flex;
+      list-style: none;
+      .links__item {
+        margin-right: 45px;
+      }
+    }
+  }
+  .home {
+    .home__bg {
+      display: flex;
+      padding-top: $header-height;
+      .bg__pic1 {
+        width: 50%;
+        height: 811px;
+      }
+      .bg__pic2 {
+        width: 50%;
+        height: 811px;
+      }
+    }
+    .home__text {
+      position: absolute;
+      top: 40%;
+      left: 25%;
+      width: 50%;
+      text-align: center;
+      .text__heading {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 144px;
+        margin-top: 0px;
+        margin-bottom: -15px;
+        color: #faf2f2;
+        letter-spacing: 0.3em;
+        font-weight: normal;
+      }
+      .text__lines {
+        display: flex;
+        color: #ffffff;
+        .lines__item {
+          width: 350px;
+        }
+      }
+      .text__description {
+        font-family: 'Alex Brush', cursive;
+        color: #FFF;
+        font-size: 48px;
+      }
+
+    }
+    .home__shop {
+      position: absolute;
+      bottom: 10%;
+      left: 43%;
+      width: 14%;
+      height: 7%;
+      background-color: #00000008;
+      border: 0.3px solid rgba(0, 0, 0, 0.172);
+      box-shadow: 2px 4px 1px -1px rgba(0, 0, 0, 0.378);
+a {text-decoration: none;}
+
+      .shop__text {
+        font-size: 36px;
+        color: #FFF;
+margin-right: 15px;
+
+      }
+    }
+  }
+}
