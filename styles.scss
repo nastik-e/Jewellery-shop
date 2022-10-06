@@ -1,0 +1,214 @@
+$width: 1440px;
+$header-height: 90px;
+
+.header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-family: "Actor", sans-serif;
+  box-shadow: 0px 5px 2px rgb(225, 214, 214);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #faf2f2;
+  z-index: 10;
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .nav__menu {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    .menu__item {
+      margin-left: 45px;
+    }
+  }
+  .header__links {
+    display: flex;
+    list-style: none;
+    .links__item {
+      margin-right: 45px;
+    }
+  }
+}
+.container {
+  background-color: #faf2f2;
+  width: $width;
+  margin: 0 auto;
+
+  .home {
+    .home__bg {
+      display: flex;
+      padding-top: $header-height;
+      .bg__pic1 {
+        width: 50%;
+        height: 811px;
+      }
+      .bg__pic2 {
+        width: 50%;
+        height: 811px;
+      }
+    }
+    .home__text {
+      position: absolute;
+      top: 40%;
+      left: 25%;
+      width: 50%;
+      text-align: center;
+      .text__heading {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 144px;
+        margin-top: 0px;
+        margin-bottom: -15px;
+        color: #faf2f2;
+        letter-spacing: 0.3em;
+        font-weight: normal;
+      }
+      .text__lines {
+        display: flex;
+        color: #ffffff;
+        .lines__item {
+          width: 350px;
+        }
+      }
+      .text__description {
+        font-family: "Alex Brush", cursive;
+        color: #fff;
+        font-size: 48px;
+      }
+    }
+    .home__shop {
+      position: absolute;
+      bottom: 10%;
+      left: 43%;
+      width: 14%;
+      height: 7%;
+      background-color: #00000008;
+      border: 0.3px solid rgba(0, 0, 0, 0.172);
+      box-shadow: 2px 4px 1px -1px rgba(0, 0, 0, 0.378);
+      a {
+        text-decoration: none;
+      }
+
+      .shop__text {
+        font-size: 36px;
+        color: #fff;
+        margin-right: 15px;
+      }
+    }
+  }
+  .content {
+    padding: 7% 3%;
+    height: 900px;
+    .section__heading {
+      font-family: "Gentium Book Basic", serif;
+      font-size: 48px;
+      font-weight: 400;
+      margin: 40px 0;
+    }
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+
+    .about__info {
+      width: 55%;
+      // .info__features {
+      //   width: 700px;
+      // }
+      .item__heading {
+        font-family: "Gentium Book Basic", serif;
+        font-size: 36px;
+        font-weight: 400;
+        margin: 30px 0 20px;
+      }
+      .item__text {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 26px;
+      }
+      .info__btn {
+        margin-top: 50px;
+        width: 255px;
+        height: 67px;
+        font-size: 36px;
+        border: 1px solid #000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.251);
+        font-family: "Rosario", sans-serif;
+        font-style: italic;
+        background-color: #faf2f2;
+        a {
+          font-weight: 500;
+          text-decoration: none;
+          color: #000;
+        }
+      }
+    }
+    .about__pic {
+      padding: 5%;
+      .pic__block {
+        .block__bg {
+          width: 475px;
+          height: 465px;
+          background-color: #bdb398;
+        }
+        .block__image {
+          width: 475px;
+          height: 465px;
+          background: url(./img/Rectangle\ 7.jpg);
+        }
+      }
+    }
+  }
+  .collection__menu {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-around;
+    .menu__category {
+      .pic__block {
+        .bg1 {
+          background-color: #c1ada5;
+          height: 470px;
+          width: 587px;
+        }
+        .img1 {
+          height: 470px;
+          width: 587px;
+          background: url(./img/Rectangle_9.jpg) no-repeat;
+        }
+        .bg2 {
+          background-color: #e7e8e3;
+          height: 470px;
+          width: 587px;
+        }
+        .img2 {
+          height: 470px;
+          width: 587px;
+          background: url(./img/Rectangle_10.jpg) no-repeat;
+        }
+      }
+      .category__name {
+        font-family: "Rosario", sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+        margin-top: 50px;
+      }
+    }
+  }
+  .pic__block {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-template-rows: 20px 1fr;
+
+    .block__bg {
+      grid-column-start: 2;
+    }
+    .block__image {
+      grid-row-start: 2;
+    }
+  }
+}

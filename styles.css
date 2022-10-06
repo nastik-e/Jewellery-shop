@@ -1,0 +1,195 @@
+.header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-family: "Actor", sans-serif;
+  box-shadow: 0px 5px 2px rgb(225, 214, 214);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #faf2f2;
+  z-index: 10;
+}
+.header a {
+  color: #000;
+  text-decoration: none;
+}
+.header .nav__menu {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+.header .nav__menu .menu__item {
+  margin-left: 45px;
+}
+.header .header__links {
+  display: flex;
+  list-style: none;
+}
+.header .header__links .links__item {
+  margin-right: 45px;
+}
+
+.container {
+  background-color: #faf2f2;
+  width: 1440px;
+  margin: 0 auto;
+}
+.container .home .home__bg {
+  display: flex;
+  padding-top: 90px;
+}
+.container .home .home__bg .bg__pic1 {
+  width: 50%;
+  height: 811px;
+}
+.container .home .home__bg .bg__pic2 {
+  width: 50%;
+  height: 811px;
+}
+.container .home .home__text {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  width: 50%;
+  text-align: center;
+}
+.container .home .home__text .text__heading {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 144px;
+  margin-top: 0px;
+  margin-bottom: -15px;
+  color: #faf2f2;
+  letter-spacing: 0.3em;
+  font-weight: normal;
+}
+.container .home .home__text .text__lines {
+  display: flex;
+  color: #ffffff;
+}
+.container .home .home__text .text__lines .lines__item {
+  width: 350px;
+}
+.container .home .home__text .text__description {
+  font-family: "Alex Brush", cursive;
+  color: #fff;
+  font-size: 48px;
+}
+.container .home .home__shop {
+  position: absolute;
+  bottom: 10%;
+  left: 43%;
+  width: 14%;
+  height: 7%;
+  background-color: rgba(0, 0, 0, 0.031372549);
+  border: 0.3px solid rgba(0, 0, 0, 0.172);
+  box-shadow: 2px 4px 1px -1px rgba(0, 0, 0, 0.378);
+}
+.container .home .home__shop a {
+  text-decoration: none;
+}
+.container .home .home__shop .shop__text {
+  font-size: 36px;
+  color: #fff;
+  margin-right: 15px;
+}
+.container .content {
+  padding: 7% 3%;
+  height: 900px;
+}
+.container .content .section__heading {
+  font-family: "Gentium Book Basic", serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin: 40px 0;
+}
+.container .about {
+  display: flex;
+  justify-content: space-between;
+}
+.container .about .about__info {
+  width: 55%;
+}
+.container .about .about__info .item__heading {
+  font-family: "Gentium Book Basic", serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 30px 0 20px;
+}
+.container .about .about__info .item__text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 26px;
+}
+.container .about .about__info .info__btn {
+  margin-top: 50px;
+  width: 255px;
+  height: 67px;
+  font-size: 36px;
+  border: 1px solid #000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.251);
+  font-family: "Rosario", sans-serif;
+  font-style: italic;
+  background-color: #faf2f2;
+}
+.container .about .about__info .info__btn a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+.container .about .about__pic {
+  padding: 5%;
+}
+.container .about .about__pic .pic__block .block__bg {
+  width: 475px;
+  height: 465px;
+  background-color: #bdb398;
+}
+.container .about .about__pic .pic__block .block__image {
+  width: 475px;
+  height: 465px;
+  background: url(./img/Rectangle\ 7.jpg);
+}
+.container .collection__menu {
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-around;
+}
+.container .collection__menu .menu__category .pic__block .bg1 {
+  background-color: #c1ada5;
+  height: 470px;
+  width: 587px;
+}
+.container .collection__menu .menu__category .pic__block .img1 {
+  height: 470px;
+  width: 587px;
+  background: url(./img/Rectangle_9.jpg) no-repeat;
+}
+.container .collection__menu .menu__category .pic__block .bg2 {
+  background-color: #e7e8e3;
+  height: 470px;
+  width: 587px;
+}
+.container .collection__menu .menu__category .pic__block .img2 {
+  height: 470px;
+  width: 587px;
+  background: url(./img/Rectangle_10.jpg) no-repeat;
+}
+.container .collection__menu .menu__category .category__name {
+  font-family: "Rosario", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  margin-top: 50px;
+}
+.container .pic__block {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  grid-template-rows: 20px 1fr;
+}
+.container .pic__block .block__bg {
+  grid-column-start: 2;
+}
+.container .pic__block .block__image {
+  grid-row-start: 2;
+}/*# sourceMappingURL=styles.css.map */
